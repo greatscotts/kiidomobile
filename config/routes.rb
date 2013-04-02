@@ -27,7 +27,7 @@ SampleApp::Application.routes.draw do
     match '/html5',  :to=> 'static_pages#les1'
      match '/android',  :to=> 'static_pages#les2'
  match '/home',  :to=> 'static_pages#home'
-  root      :to=> 'static_pages#bug'
+  root      :to=> 'users#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

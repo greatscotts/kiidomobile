@@ -4,18 +4,43 @@
 <% if signed_in? %>
 
 
-</br>
+
 
 </br>
 </br>
 </br>
-<h1>Learn from the worlds Top Professors</h1>
+</br>
+</br>
+</br>
 
-<%= render 'search' %>
-<ul class="users">
-  <%= render @users %>
+ <img src="http://i47.tinypic.com/153p440.png"/></a> 
+</br>
 
-</ul>
+
+
+</br>
+</br>
+</br>
+
+</br>
+
+
+
+<center><h3><%= link_to "Courses", course_path %> | <%= link_to "About", about_path %> | <%= link_to "Team", root_path %> | <%= link_to "Universities", root_path %> | <%= link_to "Teachers", courses_path %> <% if signed_in? %> | <%= link_to "View Profie", user_path(current_user) %>| <%= link_to "Settings", edit_user_path(current_user) %>  | <%=link_to "Log Out", signout_path, :method=> :delete %> <% end %> </center>
+<br>
+<br>
+    
+   
+    <br>
+<br>
+
+   <center> Copyright 2013 OrangeApps © All Rights Reserved. </center>
+</br>
+</br>
+</br>
+
+</br>
+</div>
 <% else %>
   <%= render "shared/home" %>
 <% end %>
