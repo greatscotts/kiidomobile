@@ -15,10 +15,10 @@ module ApplicationHelper
   end
 
 
-  def avatar_url(user, options = { :size=> 150 })  
+  def avatar_url(user, options = { :size=> 100 })  
     default_url = "http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-4/128/man-icon.png"  
     gravatar_id = Digest::MD5::hexdigest(user.email).downcase  
-    "http://gravatar.com/avatar/#{gravatar_id}.png?s=1500&d=#{CGI.escape(default_url)}"  
+    "http://gravatar.com/avatar/#{gravatar_id}.png?s250&d=#{CGI.escape(default_url)}"  
   end  
  
   def avatarzz_url(user, options = { :size=> 250 })  
