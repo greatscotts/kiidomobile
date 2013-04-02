@@ -26,7 +26,7 @@
 
 
 
-<center><h3><%= link_to "Courses", course_path %> | <%= link_to "About", about_path %> | <%= link_to "Team", root_path %> | <%= link_to "Universities", root_path %> | <%= link_to "Teachers", courses_path %> <% if signed_in? %> | <%= link_to "View Profie", user_path(current_user) %>| <%= link_to "Settings", edit_user_path(current_user) %>  | <%=link_to "Log Out", signout_path, :method=> :delete %> <% end %> </center>
+<center><h3> <% if signed_in? %> <%= link_to "View Profie", user_path(current_user) %>| <%= link_to "Settings", edit_user_path(current_user) %>  | <%=link_to "Log Out", signout_path, :method=> :delete %> <% end %> </center>
 <br>
 <br>
     
